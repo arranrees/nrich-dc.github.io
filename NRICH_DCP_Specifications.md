@@ -152,6 +152,33 @@ object metadata. Whichever standards is chosen, they MUST be serialised as
 |  |  |  |
 |  |  |  |
 
+
+
+| **Standard level** | **Metadata type** | **Dublin Core term** | **Spectrum mapping** | **Notes** |
+| --- | --- | --- | --- | --- |
+| Baseline | Artefact | [title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/title/) | [Title](https://collectionstrust.org.uk/resource/title/) If no formal title, then:[Object name](https://collectionstrust.org.uk/resource/object-name/)- [Object name type](https://collectionstrust.org.uk/resource/object-name-type/) | In Spectrum, Object name has a sub field of Object name type which should be used to denote if it is a simple name, specific or taxonomic name. |
+| Baseline | Artefact | [description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/description/) | [Brief description](https://collectionstrust.org.uk/resource/brief-description/) |  |
+| Baseline | Artefact | [type](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/type/) | [Object name](https://collectionstrust.org.uk/resource/object-name/)- [Object name type](https://collectionstrust.org.uk/resource/object-name-type/) = object type | In Spectrum, Object name has a sub field of Object name type which should be used to denote if it is a simple name, specific or taxonomic name. For type, it should say ‘object type’. |
+| Baseline | Artefact | [relation](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/relation/) | [Reference](https://collectionstrust.org.uk/resource/reference/)- [Reference type](https://collectionstrust.org.uk/resource/reference-type/) | Use ‘Reference type’ to record that it is a URL to an organisation metadata record |
+| Baseline | Artefact | [creator](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/creator/) | [Object production person](https://collectionstrust.org.uk/resource/object-production-person/)[Object production organisation](https://collectionstrust.org.uk/resource/object-production-organisation/)[Object production people](https://collectionstrust.org.uk/resource/object-production-people/) | Spectrum breaks this down into people, organisation and person. There isn’t a generic creator. |
+| Baseline | Artefact | [contributor](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/contributor/) | [Associated person](https://collectionstrust.org.uk/resource/associated-person/)[Associated organisation](https://collectionstrust.org.uk/resource/associated-organisation/)[Associated people](https://collectionstrust.org.uk/resource/associated-people/)- [Association type](https://collectionstrust.org.uk/resource/association-type/) | Spectrum breaks this down into people, organisation and person. There isn’t a generic creator.Association type is used to define the type of association / contribution. |
+| Baseline | Artefact | [created](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/created/) | [Object production date](https://collectionstrust.org.uk/resource/object-production-date/) |  |
+| Baseline | Artefact | [provenance](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/provenance/) | [Object history note](https://collectionstrust.org.uk/resource/object-history-note/) |  |
+| Baseline | Digital asset | [source](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/source/) |  | This doesn’t really exist in Spectrum. |
+| Baseline | Digital asset | [references](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/references/) | [Current reproduction location](https://collectionstrust.org.uk/resource/current-reproduction-location/) | Based on this being identified as the property that the IIIF manifest would be shared under. |
+| Baseline | Digital asset | [license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/license/) | [Rights out type](https://collectionstrust.org.uk/resource/rights-out-type/) |  |
+| Baseline | Digital asset | [rightsHolder](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/rightsHolder/) | [Right holder – Person](https://collectionstrust.org.uk/resource/right-holder/)[Right holder – Organisation](https://collectionstrust.org.uk/resource/right-holder/)[Right holder - People](https://collectionstrust.org.uk/resource/right-holder/) |  |
+| Baseline | Digital asset | [format](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/format/) | [Reproduction format](https://collectionstrust.org.uk/resource/reproduction-format/) |  |
+| Baseline | Digital asset | [identifier](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/identifier/) | [Reproduction number](https://collectionstrust.org.uk/resource/reproduction-number/) |  |
+| Baseline | Digital asset | [publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/publisher/) | [Reproduction creator](https://collectionstrust.org.uk/resource/reproduction-creator/) |  |
+| Baseline | Digital asset | [issued](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/issued/) | [Reproduction date](https://collectionstrust.org.uk/resource/reproduction-date/) |  |
+| Enhanced | Artefact | [subject](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/subject/) | [Associated concept](https://collectionstrust.org.uk/resource/associated-concept/) | Spectrum does not have a generic subject or keyword. Associated concept is what Museum Data Service has used to record subjects and keywords in museum metadata. |
+| Enhanced | Artefact | [spatial](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/spatial/) | [Associated place](https://collectionstrust.org.uk/resource/associated-place/)- [Association type](https://collectionstrust.org.uk/resource/association-type/) | Association type would be used to define the type of relationship to place. |
+| Enhanced | Artefact | [temporal](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/temporal/) | [Associated date](https://collectionstrust.org.uk/resource/associated-date/)- [Association type](https://collectionstrust.org.uk/resource/association-type/) | Association type would be used to define the type of relationship to the date / period. |
+| Enhanced | Artefact | [language](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/language/) | [Content - language](https://collectionstrust.org.uk/resource/content-language/) | |
+
+
+
 ### WikiData
 
 Amongst other functions,
